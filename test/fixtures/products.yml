@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  capacity: 1
-  average_attendence: 1
-  location: MyString
+  title: MyString1
+  description: MyText1
+  image_url: http://c1038.r38.cf3.rackcdn.com/group1/building5195/media/LECTURE%20THEATRE%20CF007566.jpg
+  capacity: 11
+  average_attendence: 11
+  location: MyString.jpeg
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  capacity: 1
-  average_attendence: 1
+  title: MyString2
+  description: MyText2
+  image_url: http://c1038.r38.cf3.rackcdn.com/group1/building5195/media/LECTURE%20THEATRE%20CF007566.jpg
+  capacity: 12
+  average_attendence: 12
   location: MyString

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString1
+  description: MyText1
+  image_url: MyString
+  capacity: 10
+  average_attendence: 10
+  location: http://c1038.r38.cf3.rackcdn.com/group1/building5195/media/LECTURE%20THEATRE%20CF007566.jpg
+
+two:
+  title: MyString2
+  description: MyText2
+  image_url: MyString
+  capacity: 20
+  average_attendence: 12
+  location: http://c1038.r38.cf3.rackcdn.com/group1/building5195/media/LECTURE%20THEATRE%20CF007566.jpg

@@ -1,10 +1,10 @@
 class Product < ActiveRecord::Base
-validates :title, :description, :location, presence: true
+validates :title, :description, :image_url, presence: true
 validates :title, uniqueness: true
 validates :capacity, numericality: { greater_than_or_equal_to: 0 }
 validates :capacity, numericality: { less_than_or_equal_to: 300 }
 validates :image_url, allow_blank: true, format: {
-  with: %r{\.(gif|jpg|png)\Z}i,
+  with: %r{\.(gif|jpg|png|jpeg)\Z}i,
   message: 'must be a URL for GIF, JPG or PNG image.'
 }
 end

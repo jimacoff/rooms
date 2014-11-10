@@ -11,3 +11,12 @@ Product.create!(title: 'Theatre',
   average_attendence: 15,
   location: 'concourse')
 
+Product.create!(title: 'Theatre 2',
+  description: 
+    %{<p>
+        A lovely room 2.
+      </p>},
+  image_url: 'git.jpg',    
+  capacity: 25,
+  average_attendence: 15,
+  location: 'concourse')

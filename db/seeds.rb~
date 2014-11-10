@@ -4,7 +4,7 @@ Product.delete_all
 Product.create!(title: 'Theatre',
   description: 
     %{<p>
-        A lovely room.
+        A lovely room
       </p>},
   image_url: 'git.jpg',    
   capacity: 23,

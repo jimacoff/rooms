@@ -21,12 +21,9 @@
         <td><%= product.capacity %></td>
         <td><%= product.average_attendence %></td>
         <td><%= product.location %></td>
-        <td class='list_actions'>
-          <%= link_to 'Show', product %><br/>
-          <%= link_to 'Edit', edit_product_path(product) %><br/>
-          <%= link_to 'Destroy', product, method: :delete, 
-              data: { confirm: 'Are you sure?' } %>
-</td>>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
     <% end %>
   </tbody>

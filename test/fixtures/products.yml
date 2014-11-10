@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  image_url: MyString
+  capacity: 1
+  average_attendence: 1
+  location: MyString
+
+two:
+  title: MyString
+  description: MyText
+  image_url: MyString
+  capacity: 1
+  average_attendence: 1
+  location: MyString

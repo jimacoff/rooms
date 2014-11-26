@@ -1,6 +1,6 @@
 class Booking < ActiveRecord::Base
   belongs_to :product
-  TIME = [ "5","6","7","8","9" ]
+  TIME = [ "5pm","6pm","7pm","8pm","9pm" ]
   DAY = [ "Monday","Tuesday","Wednesday","Thursday","Friday" ]
-  ##validates_each :product_id, :day, :time, uniqueness: true
+  validate :day, :time, presence: true
 end

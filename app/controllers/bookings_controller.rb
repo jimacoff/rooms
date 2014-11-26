@@ -29,7 +29,11 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
 
     respond_to do |format|
-      if @booking.save
+    if Booking.find_by product: @booking.product, day: @booking.day, time: @booking.time
+      format.html { redirect_to "/", notice: 'Booking already exists' }  
+    elsif @booking.day=="" || @booking.time == ""
+      format.html { redirect_to "/", notice: 'Invalid input' } 
+      elsif @booking.save
         format.html { redirect_to @booking, notice: 'Theatre was successfully booked' }
         format.json { render :show, status: :created, location: @booking }
       else

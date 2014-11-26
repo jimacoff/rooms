@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Product:</strong>
+  <strong>Theatre:</strong>
   <%= @booking.product.title %>
 </p>
 
@@ -17,3 +17,5 @@
 
 <%= link_to 'Edit', edit_booking_path(@booking) %> |
 <%= link_to 'Back', bookings_path %>
+<%= link_to 'Continue Browsing',    "/"    %>
+

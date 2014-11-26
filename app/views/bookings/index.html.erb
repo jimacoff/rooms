@@ -16,9 +16,11 @@
         <td><%= booking.product.title %></td>
         <td><%= booking.day %></td>
         <td><%= booking.time %></td>
+        <% if session[:user_id] %>
         <td><%= link_to 'Show', booking %></td>
         <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
         <td><%= link_to 'Cancel', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

@@ -20,12 +20,13 @@
 	  <li><a href = '/'>Home</a></li>
           <li><a href="/login">Login</a></li>
           <li><a href="/users/new">Create Account</a></li>
+          <li><a href="/bookings">Check Bookings</a></li>
       </ul>
     <% if session[:user_id] %>
       <br />
       <%= link_to 'Users',    users_path    %><br />
       <%= link_to 'Theatres',    products_path    %><br />
-      <%= link_to 'Bookings',    bookings_path    %><br />
+
       <br />
       <%= button_to 'Logout', logout_path, :method => :delete   %>
     <% end %>

@@ -2,7 +2,7 @@
   <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Your Pragmatic Catalog</h1>
+<h1>Lecture Theatres</h1>
 
 <% @products.each do |product| %>
   <div class="entry">
@@ -10,7 +10,9 @@
     <h3><%= product.title %></h3>
     <%= sanitize product.description %>
     <div class="capacity_line">
-      <span class="capacity"><%= product.capacity %></span>
+          <span class="capacity"><%= product.capacity %></span>
+          <span class="capacity"><%= product.location %></span>
+          <%= button_to "Book", new_booking_path(product_id: product), method: :get %>
     </div>
   </div>
 <% end %>

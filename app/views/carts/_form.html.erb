@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.label :time_type %><br>
+    <%= f.select :time_type, Cart::TIME, 
+                  prompt: "Select a TIME method" %>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110153713) do
+ActiveRecord::Schema.define(version: 20141126121247) do
+
+  create_table "bookings", force: true do |t|
+    t.integer  "product_id"
+    t.string   "day"
+    t.string   "time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "bookings", ["product_id"], name: "index_bookings_on_product_id"
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -35,6 +45,13 @@ ActiveRecord::Schema.define(version: 20141110153713) do
     t.integer  "capacity"
     t.integer  "average_attendence"
     t.string   "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

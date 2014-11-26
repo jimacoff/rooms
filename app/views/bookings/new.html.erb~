@@ -1,0 +1,7 @@
+
+<div class="rooms_form">
+  <fieldset>
+    <legend>Please Choose a Day And Time To Book The Theatre</legend>
+    <%= render 'form' %>
+  </fieldset>
+</div>

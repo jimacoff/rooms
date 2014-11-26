@@ -17,7 +17,7 @@
   background: #2B547E;
   padding: 10px;
   border-bottom: 5px solid #2B3856;
-  font: small-caps 40px/40px "Ariel", serif;
+  font: small-caps 40px/40px "sans serif", serif;
   color: #BCC6CC;
   text-align: center;
 
@@ -38,7 +38,7 @@
   background: #ADD8E6;
 
   #main {
-    margin-left: 17em;
+    margin-left: 14em;
     padding: 1em;
     background: white;
   }
@@ -46,7 +46,7 @@
   #side {
     float: left;
     padding: 1em 2em;
-    width: 13em;
+    width: 10em;
     background: #ADD8E6;
     color: white;
 

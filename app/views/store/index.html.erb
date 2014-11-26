@@ -10,7 +10,9 @@
     <h3><%= product.title %></h3>
     <%= sanitize product.description %>
     <div class="capacity_line">
-      <span class="capacity"><%= product.capacity %></span>
+          <span class="capacity"><%= product.capacity %></span>
+          <span class="capacity"><%= product.location %></span>
+          <%= link_to "Book", new_booking_path(product_id: product), method: :get %>
     </div>
   </div>
 <% end %>

@@ -1,0 +1,18 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<h2>Your Bookings</h2>
+<ul>    
+  <% @cart.line_items.each do |item| %>
+    <li><%= item.product.title %></li>
+
+  <% end %>
+<p>
+<!-- <p>
+ <strong>Time type:</strong>
+    <%= @cart.time_type %>
+</p>
+//-->  
+
+</ul>

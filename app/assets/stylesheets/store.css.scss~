@@ -31,6 +31,9 @@ h1 {
   }
 
   p, div.capacity_line {
+    form, div {
+      display: justified;
+    }
     margin-left: 100px;
     margin-top: 0.5em;
     margin-bottom: 0.8em;
